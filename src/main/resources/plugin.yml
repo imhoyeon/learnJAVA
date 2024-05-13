@@ -1,0 +1,4 @@
+name: test
+version: '${version}'
+main: me.shy.test.Test
+api-version: '1.20'

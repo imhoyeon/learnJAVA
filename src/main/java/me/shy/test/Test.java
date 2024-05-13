@@ -8,7 +8,7 @@ public final class Test extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getLogger().warning("플러그인 활성화");
-
+        Bukkit.getCommandMap().register("test", new command("test"));
     }
 
     @Override
