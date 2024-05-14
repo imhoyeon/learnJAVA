@@ -1,8 +1,6 @@
 package me.shy.test;
 
 import org.bukkit.Location;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.entity.Player;
@@ -37,8 +35,8 @@ public class command extends BukkitCommand {
         Random random = new Random();
         Location playerLocation = player.getLocation();
 
-        int x = random.nextInt(10000) - 10000;
-        int z = random.nextInt(10000) - 10000;
+        int x = random.nextInt(20000) - 10000;
+        int z = random.nextInt(20000) - 10000;
         int Y = world.getHighestBlockYAt(x, z);
 
         for ( int i = Y; i > -64; i--) {
